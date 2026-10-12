@@ -1,96 +1,98 @@
 <!doctype html>
-<html lang="pl">
+<html lang="pl" data-page="catalog">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio zrealizowanych projektów agentic AI, chatbotów, RAG, Document AI i multimodalnych systemów dla biznesu." />
+    <meta name="description" content="Portfolio zrealizowanych projektów agentic AI, chatbotów, RAG, Document AI i multimodalnych systemów dla biznesu." data-i18n-attr="content" data-i18n="Portfolio zrealizowanych projektów agentic AI, chatbotów, RAG, Document AI i multimodalnych systemów dla biznesu." />
     <meta name="theme-color" content="#0b0d0c" />
-    <title>Zrealizowane projekty AI — AXONORA</title>
+    <title data-i18n>Zrealizowane projekty AI — AXONORA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0d0c'/%3E%3Cpath d='M16 45 30 15h6l13 30h-9l-3-8H27l-3 8zm14-16h5l-2-7z' fill='%23c9ff4a'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="catalog.css" />
+    <script src="../language.js" defer></script>
     <script src="catalog.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#catalog">Przejdź do katalogu</a>
+    <a class="skip-link" href="#catalog" data-i18n>Przejdź do katalogu</a>
 
     <header class="catalog-header">
-      <a class="brand" href="../index.html" aria-label="AXONORA — strona główna">
+      <a class="brand" href="../index.html" aria-label="AXONORA — strona główna" data-i18n-attr="aria-label" data-i18n="AXONORA — strona główna">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>AXONORA</span>
         <small>APPLIED AI STUDIO</small>
       </a>
-      <nav aria-label="Nawigacja podstrony">
-        <a href="../index.html#projekty">Interaktywne dema</a>
-        <a href="../index.html#kompetencje">Kompetencje</a>
-        <a class="back-link" href="../index.html">Wróć na stronę główną</a>
+      <nav aria-label="Nawigacja podstrony" data-i18n-attr="aria-label" data-i18n="Nawigacja podstrony">
+        <a href="../index.html#projekty" data-i18n>Interaktywne dema</a>
+        <a href="../index.html#kompetencje" data-i18n>Kompetencje</a>
+        <a class="back-link" href="../index.html" data-i18n>Wróć na stronę główną</a>
+        <button class="language-switch" type="button" data-language-switch aria-label="Switch language to English">EN</button>
       </nav>
     </header>
 
     <main>
       <section class="catalog-hero" aria-labelledby="catalog-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Zrealizowane projekty AI</p>
-          <h1 id="catalog-title">Więcej niż chatbot.<br /><em>AI osadzone</em> w procesie.</h1>
-          <p>Portfolio projektów dla sprzedaży, operacji, produkcji, obsługi i pracy z wiedzą. Każdy case study pokazuje problem, przebieg rozwiązania, wykorzystane dane oraz miejsce kontroli człowieka.</p>
+          <p class="eyebrow"><span></span> <span data-i18n>Zrealizowane projekty AI</span></p>
+          <h1 id="catalog-title" data-i18n data-i18n-html="true">Więcej niż chatbot.<br /><em>AI osadzone</em> w procesie.</h1>
+          <p data-i18n>Portfolio projektów dla sprzedaży, operacji, produkcji, obsługi i pracy z wiedzą. Każdy case study pokazuje problem, przebieg rozwiązania, wykorzystane dane oraz miejsce kontroli człowieka.</p>
         </div>
       </section>
 
       <section class="catalog-section" id="catalog" aria-labelledby="catalog-heading">
         <div class="catalog-intro">
           <div>
-            <p class="section-kicker">/ Znajdź swój proces</p>
-            <h2 id="catalog-heading">Od pytania klienta<br />do decyzji agenta.</h2>
+            <p class="section-kicker" data-i18n>/ Znajdź swój proces</p>
+            <h2 id="catalog-heading" data-i18n data-i18n-html="true">Od pytania klienta<br />do decyzji agenta.</h2>
           </div>
-          <p>Wyszukaj branżę, zadanie lub technologię. Rozwiń kartę, aby zobaczyć przebieg rozwiązania oraz warunki bezpiecznego wdrożenia.</p>
+          <p data-i18n>Wyszukaj branżę, zadanie lub technologię. Rozwiń kartę, aby zobaczyć przebieg rozwiązania oraz warunki bezpiecznego wdrożenia.</p>
         </div>
 
-        <div class="catalog-tools" aria-label="Narzędzia filtrowania">
+        <div class="catalog-tools" aria-label="Narzędzia filtrowania" data-i18n-attr="aria-label" data-i18n="Narzędzia filtrowania">
           <label class="search-box">
-            <span class="sr-only">Szukaj w katalogu</span>
-            <input type="search" placeholder="Szukaj: RFQ, zdjęcie produktu, HR, umowy…" data-search />
+            <span class="sr-only" data-i18n>Szukaj w katalogu</span>
+            <input type="search" placeholder="Szukaj: RFQ, zdjęcie produktu, HR, umowy…" data-search data-i18n-attr="placeholder" data-i18n="Szukaj: RFQ, zdjęcie produktu, HR, umowy…" />
             <kbd>Ctrl K</kbd>
           </label>
-          <div class="catalog-filters" role="group" aria-label="Filtry kategorii" data-filters>
-            <button class="is-active" type="button" data-filter="all" aria-pressed="true">Wszystkie</button>
-            <button type="button" data-filter="agents" aria-pressed="false">Agenci</button>
-            <button type="button" data-filter="chatbots" aria-pressed="false">Chatboty</button>
-            <button type="button" data-filter="rag" aria-pressed="false">RAG i wiedza</button>
-            <button type="button" data-filter="vision" aria-pressed="false">Vision i multimodal</button>
-            <button type="button" data-filter="documents" aria-pressed="false">Dokumenty</button>
-            <button type="button" data-filter="commerce" aria-pressed="false">Commerce i insight</button>
+          <div class="catalog-filters" role="group" aria-label="Filtry kategorii" data-filters data-i18n-attr="aria-label" data-i18n="Filtry kategorii">
+            <button class="is-active" type="button" data-filter="all" aria-pressed="true" data-i18n>Wszystkie</button>
+            <button type="button" data-filter="agents" aria-pressed="false" data-i18n>Agenci</button>
+            <button type="button" data-filter="chatbots" aria-pressed="false" data-i18n>Chatboty</button>
+            <button type="button" data-filter="rag" aria-pressed="false" data-i18n>RAG i wiedza</button>
+            <button type="button" data-filter="vision" aria-pressed="false" data-i18n>Vision i multimodal</button>
+            <button type="button" data-filter="documents" aria-pressed="false" data-i18n>Dokumenty</button>
+            <button type="button" data-filter="commerce" aria-pressed="false" data-i18n>Commerce i insight</button>
           </div>
         </div>
 
-        <div class="catalog-status" aria-live="polite"><strong data-result-count>…</strong> projektów pasuje do wyboru</div>
+        <div class="catalog-status" aria-live="polite"><strong data-result-count>…</strong> <span data-i18n>projektów pasuje do wyboru</span></div>
         <div class="case-grid" data-case-grid></div>
 
         <div class="empty-state" data-empty hidden>
-          <span>0 wyników</span>
-          <h3>Nie znaleźliśmy takiego scenariusza.</h3>
-          <p>Spróbuj nazwy procesu, działu albo technologii.</p>
-          <button type="button" data-clear>Wyczyść wyszukiwanie</button>
+          <span data-i18n>0 wyników</span>
+          <h3 data-i18n>Nie znaleźliśmy takiego scenariusza.</h3>
+          <p data-i18n>Spróbuj nazwy procesu, działu albo technologii.</p>
+          <button type="button" data-clear data-i18n>Wyczyść wyszukiwanie</button>
         </div>
       </section>
 
       <section class="catalog-cta">
-        <p class="section-kicker">/ Od inspiracji do decyzji</p>
-        <h2>Wybierzmy scenariusz, który ma sens dla Twoich danych.</h2>
-        <p>Podczas krótkiego discovery odniesiemy doświadczenia z podobnych realizacji do Twojego procesu, danych i ograniczeń.</p>
-        <a href="mailto:hello@axonora.ai?subject=Discovery%20AI" class="cta-button">Porozmawiajmy o procesie</a>
+        <p class="section-kicker" data-i18n>/ Od inspiracji do decyzji</p>
+        <h2 data-i18n>Wybierzmy scenariusz, który ma sens dla Twoich danych.</h2>
+        <p data-i18n>Podczas krótkiego discovery odniesiemy doświadczenia z podobnych realizacji do Twojego procesu, danych i ograniczeń.</p>
+        <a href="mailto:hello@axonora.ai?subject=Discovery%20AI" class="cta-button" data-i18n>Porozmawiajmy o procesie</a>
       </section>
     </main>
 
     <footer class="catalog-footer">
-      <a class="brand" href="../index.html" aria-label="AXONORA — strona główna">
+      <a class="brand" href="../index.html" aria-label="AXONORA — strona główna" data-i18n-attr="aria-label" data-i18n="AXONORA — strona główna">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>AXONORA</span>
       </a>
-      <p>Applied AI Studio · Warsaw / Remote</p>
-      <div><a href="../index.html">Strona główna</a><a href="../index.html#projekty">Dema</a><a href="mailto:hello@axonora.ai">Kontakt</a></div>
-      <small>© <span data-year></span> AXONORA. Nazwy klientów i wrażliwe dane projektowe zostały zanonimizowane.</small>
+      <p data-i18n>Applied AI Studio · Warsaw / Remote</p>
+      <div><a href="../index.html" data-i18n>Strona główna</a><a href="../index.html#projekty" data-i18n>Dema</a><a href="mailto:hello@axonora.ai" data-i18n>Kontakt</a></div>
+      <small>© <span data-year></span> AXONORA. <span data-i18n>Nazwy klientów i wrażliwe dane projektowe zostały zanonimizowane.</span></small>
     </footer>
   </body>
 </html>

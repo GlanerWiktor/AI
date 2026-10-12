@@ -184,7 +184,7 @@ const templates = {
   pulse: () => `
     <div class="demo-app" data-demo="pulse"><div class="demo-topbar"><div class="demo-brand">MarketPulse</div><div class="demo-status">8 420 wypowiedzi · 18 języków</div></div><div class="demo-body"><aside class="demo-sidebar"><span class="demo-label">Wybierz rynek</span><button class="demo-choice is-active" data-market="fintech">Fintech B2B</button><button class="demo-choice" data-market="retail">Retail</button><button class="demo-choice" data-market="energy">Energia</button><span class="demo-label" style="margin-top:20px">Źródła</span><div class="demo-pills"><span class="demo-pill">Opinie</span><span class="demo-pill">Wywiady</span><span class="demo-pill">Social</span><span class="demo-pill">Raporty</span></div></aside><main class="demo-main"><div class="demo-kpi-row"><div class="demo-kpi"><strong data-pulse-kpi="mentions">2 148</strong><span>wzmianek</span></div><div class="demo-kpi"><strong data-pulse-kpi="sentiment">+24%</strong><span>sentyment</span></div><div class="demo-kpi"><strong data-pulse-kpi="signal">3</strong><span>nowe sygnały</span></div></div><div class="demo-grid-2"><div class="demo-card"><span class="demo-label">Dynamika tematów</span><div class="insight-chart"><i style="--h:36%"></i><i style="--h:58%"></i><i class="is-hot" style="--h:84%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:70%"></i></div></div><div class="demo-card"><span class="demo-label">Brief AI</span><h3 data-pulse-title>Rosną oczekiwania wobec explainability</h3><p data-pulse-summary>Decydenci częściej pytają nie tylko o wynik modelu, ale o źródła, ślad decyzji i możliwość ręcznej korekty.</p><div class="demo-pills"><span class="demo-pill is-good">trend rosnący</span><span class="demo-pill">pewność 88%</span></div></div></div></main></div></div>`,
   guard: () => `
-    <div class="demo-app" data-demo="guard"><div class="demo-topbar"><div class="demo-brand">ModelGuard</div><div class="demo-status">Pakiet testów: Customer AI / v4.2</div></div><div class="demo-body"><aside class="demo-sidebar"><label class="demo-label" for="guard-prompt">Przykładowa odpowiedź modelu</label><textarea class="demo-textarea" id="guard-prompt">Klient Anna Kowalska ma aktywną polisę nr 88319. Zwrot zostanie wykonany w ciągu 14 dni.</textarea><button class="demo-button guard-run" type="button" style="width:100%;margin-top:10px">Uruchom ewaluację</button><div class="demo-pills" style="margin-top:15px"><span class="demo-pill">Poprawność</span><span class="demo-pill">PII</span><span class="demo-pill">Grounding</span><span class="demo-pill">Ton</span></div></aside><main class="demo-main"><div class="demo-grid-2"><div class="demo-card"><span class="demo-label">Wynik łączny</span><div class="score-ring" data-score="--" style="--score:0"></div></div><div class="demo-card"><span class="demo-label">Ocena kryteriów</span><ul class="demo-list guard-list"><li><b>Zgodność ze źródłem</b><small>oczekuje</small></li><li><b>Dane osobowe</b><small>oczekuje</small></li><li><b>Kompletność</b><small>oczekuje</small></li><li><b>Styl odpowiedzi</b><small>oczekuje</small></li></ul></div></div><div class="demo-card guard-advice" hidden><span class="demo-label">Rekomendacja</span><p>Usuń dane osobowe i numer polisy z odpowiedzi. Termin 14 dni wymaga cytowania z regulaminu.</p><div class="demo-pills"><span class="demo-pill is-risk">PII</span><span class="demo-pill is-risk">brak źródła</span><span class="demo-pill is-good">ton poprawny</span></div></div></main></div></div>`,
+    <div class="demo-app" data-demo="guard"><div class="demo-topbar"><div class="demo-brand">ModelGuard</div><div class="demo-status">Customer AI · v4.2 test suite</div></div><div class="demo-body"><aside class="demo-sidebar"><label class="demo-label" for="guard-prompt">Sample model response</label><textarea class="demo-textarea" id="guard-prompt">Customer Anna Kowalska has an active policy no. 88319. The refund will be processed within 14 days.</textarea><button class="demo-button guard-run" type="button" style="width:100%;margin-top:10px">Run evaluation</button><div class="demo-pills" style="margin-top:15px"><span class="demo-pill">Accuracy</span><span class="demo-pill">PII</span><span class="demo-pill">Grounding</span><span class="demo-pill">Tone</span></div></aside><main class="demo-main"><div class="demo-grid-2"><div class="demo-card"><span class="demo-label">Overall score</span><div class="score-ring" data-score="--" style="--score:0"></div></div><div class="demo-card"><span class="demo-label">Criteria results</span><ul class="demo-list guard-list"><li><b>Source grounding</b><small>pending</small></li><li><b>Personal data</b><small>pending</small></li><li><b>Completeness</b><small>pending</small></li><li><b>Response style</b><small>pending</small></li></ul></div></div><div class="demo-card guard-advice" hidden><span class="demo-label">Recommendation</span><p>Remove personal data and the policy number. The 14-day timeframe needs a citation from the policy.</p><div class="demo-pills"><span class="demo-pill is-risk">PII</span><span class="demo-pill is-risk">no source</span><span class="demo-pill is-good">tone OK</span></div></div></main></div></div>`,
   cad: () => `
     <div class="demo-app" data-demo="cad"><div class="demo-topbar"><div class="demo-brand">Blueprint IQ</div><select class="demo-select cad-sample" aria-label="Wybierz przykładowy rysunek" style="width:auto"><option value="plate">Płyta montażowa A17</option><option value="bracket">Wspornik B04</option></select></div><div class="demo-body"><aside class="demo-sidebar"><span class="demo-label">Wydobyte parametry</span><ul class="demo-list cad-values"><li><b>Materiał</b><small>S355</small></li><li><b>Grubość</b><small>12 mm</small></li><li><b>Otwory</b><small>4 × M8</small></li><li><b>Tolerancja</b><small>±0,2 mm</small></li></ul><button class="demo-button cad-build" type="button" style="width:100%;margin-top:15px">Generuj BOM</button><div class="demo-card cad-bom" hidden style="margin-top:12px"><b>14 pozycji</b><br><small>Materiał + obróbka + kontrola</small></div></aside><main class="demo-main"><span class="demo-label">Kliknij znacznik na rysunku</span><div class="drawing-canvas"><div class="drawing-part"></div><button class="drawing-hotspot" data-note="Wymiar bazowy: 240 × 160 mm">1</button><button class="drawing-hotspot" data-note="4 otwory gwintowane M8, rozstaw 180 mm">2</button><button class="drawing-hotspot" data-note="Tolerancja płaskości: 0,2 mm">3</button><div class="drawing-tooltip">Model wykrył 3 grupy cech. Wybierz znacznik, aby zobaczyć interpretację.</div></div></main></div></div>`,
   vision: () => `
@@ -338,7 +338,11 @@ const bindDemo = (key) => {
     const input = root.querySelector('.demo-input');
     const feed = root.querySelector('.chat-feed');
     const preview = root.querySelector('.source-preview');
-    const answers = [
+    const answers = window.AxonoraI18n?.language === 'en' ? [
+      'Error E-041 indicates a communication interruption with the axis module. Power down for 30 seconds, check connector X14 and run diagnostic test 4.2. If the code returns, replace the signal cable.',
+      'AX5 has an additional automatic test and does not require a manual bus reset. The remaining steps are the same: check X14, review the diagnostic log and run an unloaded motion test.',
+      'Yes, if overheating was not caused by operating outside the temperature range. The temperature log and module version are required.'
+    ] : [
       'Błąd E-041 oznacza przerwanie komunikacji z modułem osi. Wyłącz zasilanie na 30 sekund, sprawdź złącze X14 i uruchom test diagnostyczny 4.2. Jeśli kod wróci, wymień przewód sygnałowy.',
       'AX5 ma dodatkowy test automatyczny i nie wymaga ręcznego resetu magistrali. Pozostałe kroki są wspólne: kontrola X14, log diagnostyczny i test ruchu bez obciążenia.',
       'Tak, jeśli przegrzanie nie wynika z pracy poza zakresem temperatury. Potrzebne są log temperatury i numer wersji modułu.'
@@ -350,9 +354,11 @@ const bindDemo = (key) => {
       const button = root.querySelector('.demo-button');
       button.disabled = true;
       addTimer(() => {
-        const index = /porównaj/i.test(question) ? 1 : /gwarancja/i.test(question) ? 2 : 0;
+        const index = /porównaj|compare/i.test(question) ? 1 : /gwarancja|warranty/i.test(question) ? 2 : 0;
         appendChat(feed, answers[index]);
-        preview.innerHTML = '<button class="source-item"><strong>Instrukcja AX4 · rozdz. 4.2</strong><small>Procedura E-041 · str. 64</small></button><button class="source-item"><strong>Zgłoszenie #SR-1841</strong><small>Rozwiązane 12.08.2026</small></button>';
+        preview.innerHTML = window.AxonoraI18n?.language === 'en'
+          ? '<button class="source-item"><strong>AX4 manual · sec. 4.2</strong><small>E-041 procedure · p. 64</small></button><button class="source-item"><strong>Ticket #SR-1841</strong><small>Resolved 12 Aug 2026</small></button>'
+          : '<button class="source-item"><strong>Instrukcja AX4 · rozdz. 4.2</strong><small>Procedura E-041 · str. 64</small></button><button class="source-item"><strong>Zgłoszenie #SR-1841</strong><small>Rozwiązane 12.08.2026</small></button>';
         button.disabled = false;
       }, 450);
     };
@@ -381,7 +387,11 @@ const bindDemo = (key) => {
   }
 
   if (key === 'pulse') {
-    const markets = {
+    const markets = window.AxonoraI18n?.language === 'en' ? {
+      fintech: ['2,148', '+24%', '3', 'Expectations around explainability are rising', 'Decision-makers increasingly ask not only for a model result, but for its sources, decision trail and options for manual correction.', [36,58,84,62,48,70]],
+      retail: ['3,806', '+18%', '5', 'Customers expect a more consistent omnichannel experience', 'Shoppers expect promotions, availability and returns to work the same way across online and physical stores.', [72,44,60,89,54,77]],
+      energy: ['1,274', '+31%', '4', 'Interest in energy independence is accelerating', 'Customers ask about storage, dynamic tariffs and home energy management more often than a quarter ago.', [31,46,39,54,81,63]]
+    } : {
       fintech: ['2 148', '+24%', '3', 'Rosną oczekiwania wobec explainability', 'Decydenci częściej pytają nie tylko o wynik modelu, ale o źródła, ślad decyzji i możliwość ręcznej korekty.', [36,58,84,62,48,70]],
       retail: ['3 920', '+11%', '5', 'Klienci chcą rekomendacji z uzasadnieniem', 'Najlepiej oceniane doświadczenia pokazują nie tylko produkt, lecz także krótkie wyjaśnienie, dlaczego pasuje do sytuacji klienta.', [72,44,60,89,54,77]],
       energy: ['1 306', '-6%', '2', 'Koszt wdrożenia wypiera rozmowę o modelu', 'W wypowiedziach technicznych rośnie udział tematów integracji, utrzymania i kontroli kosztu inferencji.', [31,46,39,54,81,63]]
@@ -406,14 +416,19 @@ const bindDemo = (key) => {
       const ring = root.querySelector('.score-ring');
       ring.style.setProperty('--score', score);
       ring.dataset.score = score;
-      const values = hasPII ? [['Zgodność ze źródłem','72%'],['Dane osobowe','ryzyko'],['Kompletność','81%'],['Styl odpowiedzi','96%']] : [['Zgodność ze źródłem','94%'],['Dane osobowe','brak'],['Kompletność','88%'],['Styl odpowiedzi','97%']];
+      const values = window.AxonoraI18n?.language === 'en'
+        ? (hasPII ? [['Source grounding','72%'],['Personal data','risk'],['Completeness','81%'],['Response style','96%']] : [['Source grounding','94%'],['Personal data','none'],['Completeness','88%'],['Response style','97%']])
+        : (hasPII ? [['Zgodność ze źródłem','72%'],['Dane osobowe','ryzyko'],['Kompletność','81%'],['Styl odpowiedzi','96%']] : [['Zgodność ze źródłem','94%'],['Dane osobowe','brak'],['Kompletność','88%'],['Styl odpowiedzi','97%']]);
       root.querySelector('.guard-list').innerHTML = values.map(([name,value]) => `<li><b>${name}</b><small class="${value === 'ryzyko' ? 'alert' : 'ok'}">${value}</small></li>`).join('');
       root.querySelector('.guard-advice').hidden = false;
     });
   }
 
   if (key === 'cad') {
-    const samples = {
+    const samples = window.AxonoraI18n?.language === 'en' ? {
+      plate: [['Material','S355'],['Thickness','12 mm'],['Holes','4 × M8'],['Tolerance','±0.2 mm']],
+      bracket: [['Material','Al 7075'],['Thickness','8 mm'],['Bends','2 × 90°'],['Tolerance','±0.1 mm']]
+    } : {
       plate: [['Materiał','S355'],['Grubość','12 mm'],['Otwory','4 × M8'],['Tolerancja','±0,2 mm']],
       bracket: [['Materiał','Al 7075'],['Grubość','8 mm'],['Gięcia','2 × 90°'],['Tolerancja','±0,1 mm']]
     };
@@ -421,7 +436,10 @@ const bindDemo = (key) => {
       root.querySelector('.cad-values').innerHTML = samples[event.target.value].map(([name,value]) => `<li><b>${name}</b><small>${value}</small></li>`).join('');
       root.querySelector('.cad-bom').hidden = true;
     });
-    root.querySelectorAll('.drawing-hotspot').forEach((button) => button.addEventListener('click', () => { root.querySelector('.drawing-tooltip').textContent = button.dataset.note; }));
+    const notes = window.AxonoraI18n?.language === 'en'
+      ? ['Base dimension: 240 × 160 mm','4 threaded M8 holes, 180 mm spacing','Flatness tolerance: 0.2 mm']
+      : ['Wymiar bazowy: 240 × 160 mm','4 otwory gwintowane M8, rozstaw 180 mm','Tolerancja płaskości: 0,2 mm'];
+    root.querySelectorAll('.drawing-hotspot').forEach((button, index) => button.addEventListener('click', () => { root.querySelector('.drawing-tooltip').textContent = notes[index]; }));
     root.querySelector('.cad-build').addEventListener('click', () => { root.querySelector('.cad-bom').hidden = false; });
   }
 
@@ -434,9 +452,9 @@ const bindDemo = (key) => {
       void view.offsetWidth;
       view.classList.add('is-scanning');
       addTimer(() => {
-        const total = Number(root.querySelector('[data-scan-total]').textContent.replace(/\s/g, ''));
+        const total = Number(root.querySelector('[data-scan-total]').textContent.replace(/\D/g, ''));
         const defects = Number(root.querySelector('[data-scan-defects]').textContent);
-        root.querySelector('[data-scan-total]').textContent = new Intl.NumberFormat('pl-PL').format(total + 5);
+        root.querySelector('[data-scan-total]').textContent = new Intl.NumberFormat(window.AxonoraI18n?.language === 'en' ? 'en-US' : 'pl-PL').format(total + 5);
         root.querySelector('[data-scan-defects]').textContent = String(defects + 1);
         view.classList.remove('is-scanning');
         button.disabled = false;
@@ -445,7 +463,9 @@ const bindDemo = (key) => {
   }
 
   if (key === 'quote') {
-    const formatCurrency = (value) => `${new Intl.NumberFormat('pl-PL', { maximumFractionDigits: 0 }).format(Math.round(value))} €`;
+    const english = window.AxonoraI18n?.language === 'en';
+    const locale = english ? 'en-US' : 'pl-PL';
+    const formatCurrency = (value) => `${new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }).format(Math.round(value))} €`;
     const calculateQuote = () => {
       const quantity = Math.max(1, Number(root.querySelector('.quote-qty').value) || 1);
       const materialFactor = Number(root.querySelector('.quote-material').value);
@@ -464,12 +484,12 @@ const bindDemo = (key) => {
       const total = baseCost + overhead + margin;
 
       root.querySelector('.quote-qty').value = quantity;
-      root.querySelector('[data-rfq-quantity]').textContent = `${new Intl.NumberFormat('pl-PL').format(quantity)} szt.`;
+      root.querySelector('[data-rfq-quantity]').textContent = `${new Intl.NumberFormat(locale).format(quantity)} ${english ? 'pcs.' : 'szt.'}`;
       root.querySelector('[data-rfq-material]').textContent = `${materialName} · 12 mm`;
-      root.querySelector('[data-rfq-deadline]').textContent = fast ? '7 dni · ekspres' : '14 dni';
-      root.querySelector('[data-quote-material-formula]').textContent = `${quantity} × ${unitMaterial.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €${materialFactor === 1 ? '' : ` (wsp. ${materialFactor.toLocaleString('pl-PL')})`}`;
-      root.querySelector('[data-quote-machining-formula]').textContent = `4 200 € setup + ${quantity} × 12,00 €${fast ? ' · × 1,18 ekspres' : ''}`;
-      root.querySelector('[data-quote-quality-formula]').textContent = `850 € + ${quantity} × 3,00 €${fast ? ' · × 1,18 ekspres' : ''}`;
+      root.querySelector('[data-rfq-deadline]').textContent = fast ? (english ? '7 days · rush' : '7 dni · ekspres') : (english ? '14 days' : '14 dni');
+      root.querySelector('[data-quote-material-formula]').textContent = `${quantity} × ${unitMaterial.toLocaleString(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €${materialFactor === 1 ? '' : ` (${english ? 'factor' : 'wsp.'} ${materialFactor.toLocaleString(locale)})`}`;
+      root.querySelector('[data-quote-machining-formula]').textContent = `${english ? '4,200 € setup' : '4 200 € przygotowanie'} + ${quantity} × ${english ? '12.00' : '12,00'} €${fast ? (english ? ' · × 1.18 rush' : ' · × 1,18 ekspres') : ''}`;
+      root.querySelector('[data-quote-quality-formula]').textContent = `${english ? '€850' : '850 €'} + ${quantity} × ${english ? '3.00' : '3,00'} €${fast ? (english ? ' · × 1.18 rush' : ' · × 1,18 ekspres') : ''}`;
       root.querySelector('[data-quote-overhead-formula]').textContent = `12% × ${formatCurrency(baseCost)}`;
       root.querySelector('[data-quote-margin-formula]').textContent = `18% × ${formatCurrency(baseCost + overhead)}`;
       root.querySelector('[data-cost-material]').textContent = formatCurrency(materialCost);
@@ -479,7 +499,9 @@ const bindDemo = (key) => {
       root.querySelector('[data-cost-base]').textContent = formatCurrency(baseCost);
       root.querySelector('[data-cost-overhead]').textContent = formatCurrency(overhead);
       root.querySelector('[data-cost-margin]').textContent = formatCurrency(margin);
-      root.querySelector('[data-quote-time]').textContent = fast ? 'Termin: 7 dni · ekspres' : 'Termin: 14 dni';
+      root.querySelector('[data-quote-time]').textContent = english
+        ? (fast ? 'Delivery: 7 days · rush' : 'Delivery: 14 days')
+        : (fast ? 'Termin: 7 dni · ekspres' : 'Termin: 14 dni');
       root.querySelector('[data-quote-total]').textContent = formatCurrency(total);
     };
     root.querySelector('.quote-run').addEventListener('click', calculateQuote);
@@ -487,7 +509,35 @@ const bindDemo = (key) => {
   }
 
   if (key === 'match') {
-    const samples = {
+    const samples = window.AxonoraI18n?.language === 'en' ? {
+      lamp: {
+        type: 'lighting fixture', confidence: '96%', heading: '3 lamps with similar shape and specifications',
+        features: [['Shape','cylindrical'],['Material','aluminum'],['Mounting','suspended'],['Color','graphite']],
+        products: [
+          ['Luma Pro 420','94%','Same shape, material and mounting. Higher light output.','SKU LP-420 · in stock'],
+          ['Orbis 38','89%','Similar dimensions and aluminum body. Different diffuser.','SKU OR-038 · 6 days'],
+          ['Core Pendant','83%','Same mounting and finish. Lower light output.','SKU CP-210 · in stock']
+        ]
+      },
+      chair: {
+        type: 'ergonomic office chair', confidence: '92%', heading: '3 chairs with similar functions and construction',
+        features: [['Backrest','mesh'],['Support','lumbar'],['Base','five-star'],['Color','black']],
+        products: [
+          ['ErgoFlex X','93%','Mesh backrest, adjustable lumbar support and similar base.','SKU EF-X · in stock'],
+          ['WorkSeat Pro','87%','Same adjustment range. Upholstered seat.','SKU WS-P · 3 days'],
+          ['Motion Air','82%','Similar ergonomic features. Different armrests.','SKU MA-20 · in stock']
+        ]
+      },
+      connector: {
+        type: 'industrial connector', confidence: '89%', heading: '3 connectors with comparable parameters',
+        features: [['Poles','8'],['Ingress protection','IP67'],['Locking','threaded'],['Housing','metal']],
+        products: [
+          ['Connex M8-8','92%','Same pole count, protection class and locking.','SKU CX-M8 · in stock'],
+          ['FieldLink 8','86%','Similar current rating. Different thread.','SKU FL-8 · 4 days'],
+          ['ProSeal X8','80%','Similar housing and sealing. Different pin layout.','SKU PS-X8 · in stock']
+        ]
+      }
+    } : {
       lamp: {
         type: 'oprawa oświetleniowa', confidence: '96%', heading: '3 lampy o podobnej formie i parametrach',
         features: [['Forma','cylindryczna'],['Materiał','aluminium'],['Montaż','wiszący'],['Kolor','grafit']],
@@ -549,17 +599,17 @@ const bindDemo = (key) => {
       awaiting.hidden = false;
       awaitingImage.hidden = true;
       awaiting.classList.remove('has-image');
-      awaitingTitle.textContent = 'Nie udało się użyć tego pliku';
+      awaitingTitle.textContent = window.AxonoraI18n?.language === 'en' ? 'This file could not be used' : 'Nie udało się użyć tego pliku';
       awaitingCopy.textContent = message;
     };
     const prepareFile = (file) => {
       if (!file) return;
       if (!/^image\/(jpeg|png|webp)$/i.test(file.type)) {
-        showError('Wybierz zdjęcie w formacie JPG, PNG lub WebP.');
+        showError(window.AxonoraI18n?.language === 'en' ? 'Choose an image in JPG, PNG or WebP format.' : 'Wybierz zdjęcie w formacie JPG, PNG lub WebP.');
         return;
       }
       if (file.size > 12 * 1024 * 1024) {
-        showError('Zdjęcie jest większe niż 12 MB. Wybierz mniejszy plik.');
+        showError(window.AxonoraI18n?.language === 'en' ? 'The image is larger than 12 MB. Choose a smaller file.' : 'Zdjęcie jest większe niż 12 MB. Wybierz mniejszy plik.');
         return;
       }
       const reader = new FileReader();
@@ -574,15 +624,15 @@ const bindDemo = (key) => {
         awaitingImage.src = imageUrl;
         awaitingImage.hidden = false;
         awaiting.classList.add('has-image');
-        awaitingTitle.textContent = 'Zdjęcie jest gotowe do analizy';
-        awaitingCopy.textContent = 'Kliknij przycisk analizy. Dopiero wtedy model przeszuka własną bazę produktową i pokaże odpowiedniki.';
+        awaitingTitle.textContent = window.AxonoraI18n?.language === 'en' ? 'Photo ready for analysis' : 'Zdjęcie jest gotowe do analizy';
+        awaitingCopy.textContent = window.AxonoraI18n?.language === 'en' ? 'Click analyze. The model will then search your product catalog and show matching items.' : 'Kliknij przycisk analizy. Dopiero wtedy model przeszuka własną bazę produktową i pokaże odpowiedniki.';
         results.hidden = true;
         processing.hidden = true;
         features.hidden = true;
         run.disabled = false;
-        run.textContent = '2. Analizuj i znajdź odpowiedniki';
+        run.textContent = window.AxonoraI18n?.language === 'en' ? '2. Analyze and find matches' : '2. Analizuj i znajdź odpowiedniki';
       });
-      reader.addEventListener('error', () => showError('Przeglądarka nie mogła odczytać zdjęcia. Spróbuj użyć innego pliku.'));
+      reader.addEventListener('error', () => showError(window.AxonoraI18n?.language === 'en' ? 'The browser could not read the image. Try another file.' : 'Przeglądarka nie mogła odczytać zdjęcia. Spróbuj użyć innego pliku.'));
       reader.readAsDataURL(file);
     };
     input.addEventListener('change', () => prepareFile(input.files[0]));
@@ -608,13 +658,17 @@ const bindDemo = (key) => {
         results.hidden = false;
         features.hidden = false;
         run.disabled = false;
-        run.textContent = 'Przeanalizuj zdjęcie ponownie';
+        run.textContent = window.AxonoraI18n?.language === 'en' ? 'Analyze another photo' : 'Przeanalizuj zdjęcie ponownie';
       }, 1250);
     });
   }
 
   if (key === 'commerce') {
-    const discoverySteps = [
+    const discoverySteps = window.AxonoraI18n?.language === 'en' ? [
+      { key:'goal', question:'Where will the setup be used?', options:[{value:'home',label:'Home office',memory:'Home office'},{value:'creator',label:'Mobile creator studio',memory:'Mobile studio'},{value:'team',label:'Team meeting room',memory:'Team room'}] },
+      { key:'priority', question:'What matters most in everyday use?', options:[{value:'simple',label:'Fewer cables and simplicity',memory:'Simplicity'},{value:'quality',label:'Best picture and sound',memory:'AV quality'},{value:'collab',label:'Multi-person collaboration',memory:'Collaboration'}] },
+      { key:'budget', question:'What budget should the agent consider?', options:[{value:'low',label:'Up to €800',memory:'up to €800'},{value:'mid',label:'€800–1,500',memory:'€800–1,500'},{value:'open',label:'Flexible — results matter most',memory:'flexible'}] }
+    ] : [
       {
         key: 'goal',
         question: 'Gdzie ma działać zestaw?',
@@ -643,7 +697,11 @@ const bindDemo = (key) => {
         ]
       }
     ];
-    const recommendations = {
+    const recommendations = window.AxonoraI18n?.language === 'en' ? {
+      home: ['Compact home office','A comfortable setup for focused work, calls and quick laptop switching.',['Monitor Air 27','Hub One','Lamp Mini'],'The agent matched a small space with a comfort-first priority. Everything fits on a 120 cm desk and connects through one USB-C hub.'],
+      creator: ['Mobile creator studio','A lightweight setup for recording, editing and working anywhere.',['Display Pro 32','Mic Go','Drive X2'],'The agent selected equipment with a strong image and audio profile. It supports 4K media, weighs under 6 kg and uses one power supply.'],
+      team: ['Collaboration-ready room','A setup for hybrid meetings and easy screen sharing.',['Board Meet','Cam Wide','Dock Team'],'The agent checked compatibility for 12 people, a wide camera angle and driver-free startup.']
+    } : {
       home: ['Kompaktowe home office', 'Zestaw do spokojnej pracy, rozmów i szybkiego przełączania laptopa.', ['Monitor Air 27', 'Hub One', 'Lamp Mini'], 'Agent połączył małą przestrzeń z priorytetem wygody. Wszystkie urządzenia zmieszczą się na biurku 120 cm i działają przez jeden hub USB-C.'],
       creator: ['Mobilne studio twórcy', 'Lekki zestaw do nagrań, montażu i pracy w różnych miejscach.', ['Display Pro 32', 'Mic Go', 'Drive X2'], 'Agent wybrał sprzęt z dobrym profilem obrazu i dźwięku. Zestaw obsługuje materiał 4K, waży poniżej 6 kg i korzysta z jednego zasilacza.'],
       team: ['Sala gotowa do współpracy', 'Zestaw do spotkań hybrydowych i bezproblemowego współdzielenia ekranu.', ['Board Meet', 'Cam Wide', 'Dock Team'], 'Agent sprawdził kompatybilność dla 12 osób, szeroki kąt kamery i uruchamianie bez instalacji sterowników.']
@@ -661,7 +719,9 @@ const bindDemo = (key) => {
       agent.querySelector('small').textContent = copy;
     };
     const renderMemory = () => {
-      const labels = [['Cel', state.answers.goal?.memory || '—'], ['Priorytet', state.answers.priority?.memory || '—'], ['Budżet', state.answers.budget?.memory || '—']];
+      const labels = window.AxonoraI18n?.language === 'en'
+        ? [['Goal', state.answers.goal?.memory || '—'], ['Priority', state.answers.priority?.memory || '—'], ['Budget', state.answers.budget?.memory || '—']]
+        : [['Cel', state.answers.goal?.memory || '—'], ['Priorytet', state.answers.priority?.memory || '—'], ['Budżet', state.answers.budget?.memory || '—']];
       memory.innerHTML = labels.map(([label, value]) => `<li><b>${label}</b><small>${value}</small></li>`).join('');
     };
     const addMessage = (copy, user = false) => {
@@ -673,14 +733,14 @@ const bindDemo = (key) => {
     };
     const showRecommendation = () => {
       const data = recommendations[state.answers.goal.value];
-      setAgent('catalog', 'done', '18 240 produktów → 27 kandydatów');
-      setAgent('recommendation', 'working', 'porównuje 6 zestawów');
+      setAgent('catalog', 'done', window.AxonoraI18n?.language === 'en' ? '18,240 products → 27 candidates' : '18 240 produktów → 27 kandydatów');
+      setAgent('recommendation', 'working', window.AxonoraI18n?.language === 'en' ? 'comparing 6 bundles' : 'porównuje 6 zestawów');
       addTimer(() => {
-        setAgent('recommendation', 'done', 'zestaw gotowy · 96% dopasowania');
+        setAgent('recommendation', 'done', window.AxonoraI18n?.language === 'en' ? 'bundle ready · 96% match' : 'zestaw gotowy · 96% dopasowania');
         root.querySelector('[data-commerce-title]').textContent = data[0];
-        root.querySelector('[data-commerce-copy]').textContent = `${data[1]} Budżet: ${state.answers.budget.memory}.`;
+        root.querySelector('[data-commerce-copy]').textContent = window.AxonoraI18n?.language === 'en' ? `${data[1]} Budget: ${state.answers.budget.memory}.` : `${data[1]} Budżet: ${state.answers.budget.memory}.`;
         data[2].forEach((name, index) => { root.querySelector(`[data-product-${index + 1}]`).textContent = name; });
-        root.querySelector('[data-commerce-reason]').textContent = `${data[3]} Uwzględniony priorytet: ${state.answers.priority.memory.toLowerCase()}.`;
+        root.querySelector('[data-commerce-reason]').textContent = window.AxonoraI18n?.language === 'en' ? `${data[3]} Priority included: ${state.answers.priority.memory.toLowerCase()}.` : `${data[3]} Uwzględniony priorytet: ${state.answers.priority.memory.toLowerCase()}.`;
         result.hidden = false;
         result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }, 550);
@@ -701,12 +761,12 @@ const bindDemo = (key) => {
           if (state.step < discoverySteps.length) {
             const next = discoverySteps[state.step];
             addMessage(next.question);
-            setAgent('conversation', 'working', `zadaje pytanie ${state.step + 1} z 3`);
+            setAgent('conversation', 'working', window.AxonoraI18n?.language === 'en' ? `asking question ${state.step + 1} of 3` : `zadaje pytanie ${state.step + 1} z 3`);
             renderStep();
           } else {
-            options.innerHTML = '<div class="agent-thinking"><i></i><span>Agenci przeszukują katalog i składają zestaw…</span></div>';
-            setAgent('conversation', 'done', 'brief klienta kompletny');
-            setAgent('catalog', 'working', 'przeszukuje 18 240 produktów');
+            options.innerHTML = window.AxonoraI18n?.language === 'en' ? '<div class="agent-thinking"><i></i><span>Agents are searching the catalog and building a bundle…</span></div>' : '<div class="agent-thinking"><i></i><span>Agenci przeszukują katalog i składają zestaw…</span></div>';
+            setAgent('conversation', 'done', window.AxonoraI18n?.language === 'en' ? 'customer brief complete' : 'brief klienta kompletny');
+            setAgent('catalog', 'working', window.AxonoraI18n?.language === 'en' ? 'searching 18,240 products' : 'przeszukuje 18 240 produktów');
             showRecommendation();
           }
         });
@@ -717,11 +777,11 @@ const bindDemo = (key) => {
       clearDemoTimers();
       state.step = 0;
       state.answers = {};
-      conversation.innerHTML = '<div class="chat-message"><strong>Agent rozmowy</strong><br>Najpierw zrozumiem sytuację, zamiast od razu pokazywać produkty. Gdzie ma działać zestaw?</div>';
+      conversation.innerHTML = window.AxonoraI18n?.language === 'en' ? '<div class="chat-message"><strong>Conversation agent</strong><br>First I’ll understand your situation instead of showing products right away. Where will the setup be used?</div>' : '<div class="chat-message"><strong>Agent rozmowy</strong><br>Najpierw zrozumiem sytuację, zamiast od razu pokazywać produkty. Gdzie ma działać zestaw?</div>';
       result.hidden = true;
-      setAgent('conversation', 'working', 'zadaje pytanie 1 z 3');
-      setAgent('catalog', 'idle', 'czeka na kontekst');
-      setAgent('recommendation', 'idle', 'czeka na shortlistę');
+      setAgent('conversation', 'working', window.AxonoraI18n?.language === 'en' ? 'asking question 1 of 3' : 'zadaje pytanie 1 z 3');
+      setAgent('catalog', 'idle', window.AxonoraI18n?.language === 'en' ? 'waiting for context' : 'czeka na kontekst');
+      setAgent('recommendation', 'idle', window.AxonoraI18n?.language === 'en' ? 'waiting for shortlist' : 'czeka na shortlistę');
       renderMemory();
       renderStep();
     };
@@ -765,7 +825,7 @@ document.querySelectorAll('.project-open').forEach((button) => {
   button.addEventListener('click', () => {
     clearDemoTimers();
     const key = button.dataset.project;
-    const project = projectData[key];
+    const project = window.AxonoraI18n ? window.AxonoraI18n.project(key, projectData[key]) : projectData[key];
     dialog.querySelector('[data-dialog-product]').textContent = project.title;
     dialog.querySelector('#dialog-title').textContent = project.headline;
     dialog.querySelector('[data-dialog-client]').textContent = project.client;
@@ -781,6 +841,7 @@ document.querySelectorAll('.project-open').forEach((button) => {
       </section>`).join('');
     dialog.querySelector('[data-dialog-tags]').innerHTML = project.tags.map((tag) => `<span>${tag}</span>`).join('');
     demoStage.innerHTML = templates[key]();
+    window.AxonoraI18n?.localize(demoStage);
     bindDemo(key);
     dialog.showModal();
     dialog.querySelector('.dialog-shell').scrollTop = 0;
