@@ -794,18 +794,43 @@ const setHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 
 setHeader();
 window.addEventListener('scroll', setHeader, { passive: true });
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', String(!isOpen));
-  nav.classList.toggle('is-open', !isOpen);
-  document.body.classList.toggle('menu-open', !isOpen);
-});
-
-nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+let menuScrollPosition = 0;
+const closeMobileMenu = () => {
+  if (menuToggle.getAttribute('aria-expanded') !== 'true') return;
   menuToggle.setAttribute('aria-expanded', 'false');
   nav.classList.remove('is-open');
+  header.classList.remove('menu-open');
   document.body.classList.remove('menu-open');
-}));
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.left = '';
+  document.body.style.right = '';
+  document.body.style.width = '';
+  window.scrollTo(0, menuScrollPosition);
+};
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+  if (isOpen) {
+    closeMobileMenu();
+    return;
+  }
+  menuScrollPosition = window.scrollY;
+  menuToggle.setAttribute('aria-expanded', 'true');
+  nav.classList.add('is-open');
+  header.classList.add('menu-open');
+  document.body.classList.add('menu-open');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${menuScrollPosition}px`;
+  document.body.style.left = '0';
+  document.body.style.right = '0';
+  document.body.style.width = '100%';
+});
+
+nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileMenu));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMobileMenu();
+});
 
 document.querySelectorAll('.filter').forEach((button) => {
   button.addEventListener('click', () => {
