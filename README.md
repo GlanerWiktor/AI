@@ -19,7 +19,7 @@ Otwórz `index.html` bezpośrednio w przeglądarce albo uruchom dowolny prosty s
 - Kolory, typografia i layout: zmienne na początku `styles.css`
 - Projekty, treści modali i logika demonstratorów: `projectData`, `templates` oraz `bindDemo` w `script.js`
 - Portfolio projektów: `case-studies/index.html`, `case-studies/catalog.css` i `case-studies/catalog.js`
-- Adres e-mail: wyszukaj `hello@axonora.ai`
+- Adres e-mail: `kontakt@axonora.pl`
 - Obraz hero: `assets/ai-lattice-hero.png`
 
 Wszystkie nazwy marek, wyniki i opisy projektów są przykładowe i należy zastąpić je prawdziwymi informacjami przed publikacją komercyjną.
